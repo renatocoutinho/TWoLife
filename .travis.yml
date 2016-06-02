@@ -1,0 +1,11 @@
+language: r
+cache: pse, car, MASS
+
+sudo: false
+r:
+    - oldrel
+    - release
+    - devel
+
+script:
+    R CMD BATCH Tests.R
